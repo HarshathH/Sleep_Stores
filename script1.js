@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
         updateIcon();
     });
 
-    // Close the menu when clicking anywhere on the document
-    // document.addEventListener('click', function (event) {
-    //     if (!nav.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
-    //         nav.style.display = 'none';
-    //         updateIcon();
-    //     }
-    // });
+    //Close the menu when clicking anywhere on the document
+    document.addEventListener('click', function (event) {
+        if (!nav.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+            nav.style.display = 'flex';
+            updateIcon();
+        }
+    });
 
     function updateIcon() {
         mobileMenuToggle.innerHTML = nav.style.display === 'none' ? '&#9776;' : '&#10005;';

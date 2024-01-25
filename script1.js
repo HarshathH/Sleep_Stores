@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //Close the menu when clicking anywhere on the document
     document.addEventListener('click', function (event) {
         if (!nav.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
-            nav.style.display = 'flex';
+            nav.style.display = 'none';
             updateIcon();
         }
     });

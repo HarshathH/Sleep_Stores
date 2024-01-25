@@ -11,14 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
         updateIcon();
     });
 
-    //Close the menu when clicking anywhere on the document
-    document.addEventListener('click', function (event) {
-        if (!mobileMenuToggle.contains(event.target)) {
-            nav.style.display = 'none';
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            nav.style.display = 'flex';
             updateIcon();
         }
     });
-
     function updateIcon() {
         mobileMenuToggle.innerHTML = nav.style.display === 'none' ? '&#9776;' : '&#10005;';
     }

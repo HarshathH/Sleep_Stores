@@ -24,7 +24,7 @@
     </header> -->
 
     <header>
-        <div class="logo"><h5>Sleep Stores</h5></div>
+        <div class="logo"><h1>Sleep Stores</h1></div>
         <div class="menu">
             <button class="mobile-menu-toggle">&#9776;</button>
             <nav>
@@ -78,7 +78,7 @@
                                     <li><a href="baby_protector.html">Protectors</a></li>
                                 </ul>
                             </li>
-                            <li><a href="bed_topper.html">Bed Topper/Pad Beds</a></li>
+                            <li class="nested-dropdown"><a href="bed_topper.html">Bed Topper/Pad Beds</a></li>
                             <li class="nested-dropdown">
                                 <a href="#">Home Textiles</a>
                                 <ul class="nested-dropdown-menu">
@@ -411,6 +411,7 @@ footer {
 
 .nested-dropdown {
     position: relative;
+    border-bottom:2px solid white;
 }
 
 .nested-dropdown-menu {
@@ -427,6 +428,10 @@ footer {
 
 .nested-dropdown:hover .nested-dropdown-menu {
     display: block;
+}
+    .nested-dropdown:hover .nested-dropdown-menu {
+    display: block;
+    border-bottom:2px solid white;    
 }
 h2,h1{
     font-family:'Courier New', Courier, monospace;

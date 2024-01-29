@@ -12,9 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Close the menu when clicking anywhere on the document
-    document.addEventListener('click', function (event) {
-        if (!mobileMenuToggle.contains(event.target)) {
-            nav.style.display = 'none';
+    // document.addEventListener('click', function (event) {
+    //     if (!mobileMenuToggle.contains(event.target)) {
+    //         nav.style.display = 'none';
+    //         updateIcon();
+    //     }
+    // });
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            nav.style.display = 'flex';
             updateIcon();
         }
     });

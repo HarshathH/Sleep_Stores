@@ -378,6 +378,7 @@ footer {
 
 .nested-dropdown {
     position: relative;
+    border-bottom:2px solid white; 
 }
 
 .nested-dropdown-menu {
@@ -395,7 +396,10 @@ footer {
 .nested-dropdown:hover .nested-dropdown-menu {
     display: block;
 }
-
+.nested-dropdown:hover .nested-dropdown-menu li{
+    display: block;
+    border-bottom:2px solid white;    
+}
 
 @media screen and (max-width: 600px) {
     .dropdown {
